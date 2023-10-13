@@ -577,8 +577,8 @@ hr{
 }
 
 .Img{
-  width: 220px;
-  height: 145px;
+  width: 200px;
+  height: 132px;
   margin-bottom: 5px;
 }
 
@@ -587,7 +587,7 @@ hr{
 }
     
 .bioImage{
-  width: 220px;
+  width: 200px;
   margin: 3px;
 }
 }
