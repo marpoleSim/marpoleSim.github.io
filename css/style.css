@@ -433,12 +433,12 @@ body nav ul li a {
   text-decoration: none;
   padding: 0px 3px;
   font-size: 10px;
-  line-height: 20px;
+  line-height: 10px;
   border-radius: 4px;
 }
 
 body nav .logoImg{
-   height: 28px;
+   height: 20px;
 }
 
 .body nav a:hover {
@@ -577,8 +577,8 @@ hr{
 }
 
 .Img{
-  width: 280px;
-  height: 185px;
+  width: 220px;
+  height: 145px;
   margin-bottom: 5px;
 }
 
@@ -587,7 +587,7 @@ hr{
 }
     
 .bioImage{
-  width: 250px;
+  width: 220px;
   margin: 3px;
 }
 }
@@ -631,12 +631,12 @@ body nav ul li a {
   text-decoration: none;
   padding: 0px 3px;
   font-size: 10px;
-  line-height: 20px;
+  line-height: 10px;
   border-radius: 4px;
 }
 
 body nav .logoImg{
-   height: 28px;
+   height: 20px;
 }
 
 .body nav a:hover {
@@ -775,16 +775,17 @@ hr{
 }
 
 .Img{
-  width: 120px;
+  width: 100px;
   height: 66px;
+  margin-bottom: 10px;
 }
 
 .clientImg{
-  width: 50px;
+  width: 45px;
 }
     
 .bioImage{
-  width: 200px;
+  width: 160px;
   margin: 3px;
 }
 }
