@@ -68,6 +68,7 @@ body nav .logoImg{
   padding: 2px;
   float: left;
   margin-left: 10px;
+  width: 30%;
 }
 
 .header-right {
@@ -104,14 +105,19 @@ p.about {
   width: 65%;
 }
 
-.column.hf1{
-  width: 60%;
+.column.hf0{
+  width: 20%;
   padding: 4px;
 }
 
+.column.hf1{
+  width: 30%;
+  padding:4px;
+}
+
 .column.hf2{
-  width: 35%;
-  margin-left: 4px;
+  width: 30%;
+  margin-left: 20px;
 }
 
 .coverpage{
@@ -169,10 +175,13 @@ hr{
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  border-style: solid; 
 }
 
 .grid-container > div {
+  width: 80%; 
   padding: 2px 2px; 
+  border-style: solid; 
 }
 
 .item1 {
@@ -180,18 +189,23 @@ hr{
   grid-row-end: 2;
 }
 
-.Img{
-  width: 380px;
-  height: 251px;
-  margin-bottom: 5px;
+.caseImg{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .clientImg{
-  width: 200px;
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
 }
     
 .bioImage{
-  width: 300px;
+  display: flex;
+  width: 100%;
+  height: auto;
   margin: 3px;
 }
 }
@@ -256,7 +270,7 @@ body nav .logoImg{
 }
 
 .textColumn {
-  width: 31%;
+  width: 30%;
   margin-left: 10px;
   margin-right: 10px;
   float: left;
@@ -266,6 +280,7 @@ body nav .logoImg{
   padding: 2px;
   float: left;
   margin-left: 10px;
+  width: 30%;
 }
 
 .header-right {
@@ -302,14 +317,19 @@ p.about {
   width: 65%;
 }
 
-.column.hf1{
-  width: 60%;
+.column.hf0{
+  width: 2%;
   padding: 4px;
 }
 
+.column.hf1{
+  width: 45%;
+  padding:4px;
+}
+
 .column.hf2{
-  width: 35%;
-  margin-left: 4px;
+  width: 42%;
+  margin-left: 20px;
 }
 
 .coverpage{
@@ -378,18 +398,24 @@ hr{
   grid-row-end: 2;
 }
 
-.Img{
-  width: 280px;
-  height: 185px;
-  margin-bottom: 5px;
+.caseImg{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .clientImg{
-  width: 120px;
+  display: flex;
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
 }
     
 .bioImage{
-  width: 250px;
+  display: flex;
+  width: 100%;
+  height: auto;
   margin: 3px;
 }
 }
@@ -464,6 +490,7 @@ body nav .logoImg{
   padding: 2px;
   float: left;
   margin-left: 10px;
+  width: 30%;
 }
 
 .header-right {
@@ -500,8 +527,13 @@ p.about {
   width: 65%;
 }
 
+.column.hf0{
+  width: 10%;
+  padding: 4px;
+}
+
 .column.hf1{
-  width: 60%;
+  width: 40%;
   padding: 4px;
 }
 
@@ -576,18 +608,24 @@ hr{
   grid-row-end: 2;
 }
 
-.Img{
-  width: 200px;
-  height: 132px;
-  margin-bottom: 5px;
+.caseImg{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .clientImg{
-  width: 120px;
+  display: flex;
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
 }
     
 .bioImage{
-  width: 200px;
+  display: flex;
+  width: 100%;
+  height: auto;
   margin: 3px;
 }
 }
@@ -662,6 +700,7 @@ body nav .logoImg{
   padding: 2px;
   float: left;
   margin-left: 10px;
+  width: 80%;
 }
 
 .header-right {
@@ -774,18 +813,25 @@ hr{
   grid-row-end: 2;
 }
 
-.Img{
-  width: 100px;
-  height: 66px;
+.caseImg{
+  display: flex;
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
 }
 
 .clientImg{
-  width: 45px;
+  display: flex;
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
 }
     
 .bioImage{
-  width: 160px;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
   margin: 3px;
 }
 }
