@@ -1,4 +1,5 @@
-window.onload = choosePic;
+// this will call the function which is not expected
+// window.onload = choosePic;
 
 var myPix = new Array("a2b.jpg","a3b.jpg","a4b.jpg","a5b.jpg");
 
