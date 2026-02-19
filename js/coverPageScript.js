@@ -1,7 +1,7 @@
 // this will call the function which is not expected
 // window.onload = choosePic;
 
-var myPix = new Array("c1.jpg", "a2b.jpg","a3b.jpg","a4b.jpg","a5b.jpg");
+var myPix = new Array("c1.png", "a2b.jpg","a3b.jpg","a4b.jpg","a5b.jpg");
 
 function choosePic() {
      // Get a random index
