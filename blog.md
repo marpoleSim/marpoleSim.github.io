@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Blog
+title: Discuss technology and share experience
 permalink: /blog/
 ---
-Welcome to my blog! Here are my latest posts:
