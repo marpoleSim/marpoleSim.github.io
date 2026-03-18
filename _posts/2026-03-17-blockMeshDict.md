@@ -3,7 +3,6 @@ layout: post
 title: "Make bockMeshDict easier to use"
 date: 2026-03-17
 ---
-### Make blockMeshDict Easier to Use ###
 
 *blockMesh* is a commonly used utility for generating meshes in *OpenFOAM*. It reads a dictionary file, *blockMeshDict*, and stores the generated mesh in the constant directory.
 
