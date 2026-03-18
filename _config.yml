@@ -2,3 +2,6 @@ title: marpoleSim
 description: marpoleSim blogs
 theme: minima
 favicon: /assets/favicon.ico
+kramdown:
+  math_engine: mathjax
+  input: GFM

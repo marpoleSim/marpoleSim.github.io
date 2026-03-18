@@ -20,7 +20,7 @@ Hello! This is my first blog post.
 
 [Link](https://marpolesim.com)
 
-![Image](assets/images/image.png)
+![Image](/assets/images/image.png)
 
 `inline code`
 
