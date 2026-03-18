@@ -12,14 +12,15 @@
   <link rel="stylesheet" href="css/style_desktop.css" media="screen and (min-width: 1401px) and (max-width: 2000px) " />
   <link rel="icon" type="image/x-icon" href="img/styles/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="js/coverPageScript.js"></script>
+  <script src="js/coverPageScript.js" defer></script>
 </head>
 
 <body>
-<nav>
+<header>
+<nav aria-label="Primary navigation">
         <div class="header-left">
         <ul style="padding: 0; list-style-type: none;"> 
-           <li><a href="#home"> <img class="logoImg" src="img/styles/logo.webp" alt="logo"></a></li>
+           <li><a href="#home"> <img class="logoImg" src="img/styles/logo.webp" alt="marpoleSim logo"></a></li>
         </ul>
         </div>
         <div class="header-right">
@@ -35,36 +36,37 @@
         </div>
 </nav>
 
+</header>
+
+<main>
 <div id="home" class="anchor"></div>
 <div class="row">
-    <img class="coverpage center" src="img/styles/c1.png" id="coverpagePicture" alt="c1.png">
+    <img class="coverpage center" src="img/styles/c1.png" id="coverpagePicture" alt="marpoleSim cover image">
 </div>
 
 <!-- SERVICES -->
 <hr class="solid">
 <div id="services" class="anchor"></div>
-<div class="h1 center"><b>SERVICES</b></div>
+<h1 class="h1 center"><strong>SERVICES</strong></h1>
 
 <div class="row">
         <div class="textColumn">
-        <p> <b style="font-size:20px;">Analysis</b><br><br>We provide engineering analysis to support product design 
-            and development. Our analysis includes 
-            <ul>
-               <li style="margin-bottom: 5px;">Mechanical structural analysis</li>
-               <li style="margin-bottom: 5px;">Fluid dynamics analysis for pressure drop, heat transfer, multi-phase and reactive fluid flow</li>
-               <li style="margin-bottom: 5px;">Large engineering data analysis</li>
-               <li style="margin-bottom: 5px;">Chemical engineering analysis</li>
-               <li style="margin-bottom: 5px;">System simulation analysis</li>
-            </ul>  
-         </p>   
+        <p><strong style="font-size:20px;">Analysis</strong><br><br>We provide engineering analysis to support product design and development. Our analysis includes</p>
+        <ul>
+           <li style="margin-bottom: 5px;">Mechanical structural analysis</li>
+           <li style="margin-bottom: 5px;">Fluid dynamics analysis for pressure drop, heat transfer, multi-phase and reactive fluid flow</li>
+           <li style="margin-bottom: 5px;">Large engineering data analysis</li>
+           <li style="margin-bottom: 5px;">Chemical engineering analysis</li>
+           <li style="margin-bottom: 5px;">System simulation analysis</li>
+        </ul>
         </div>
         <div class="textColumn">
-        <p> <b style="font-size:20px">Project</b></br><br> We carry out your project from beginning to end. You get a complete analysis report. 
+        <p><strong style="font-size:20px;">Project</strong><br><br> We carry out your project from beginning to end. You get a complete analysis report. 
             The process is simple. There is no need to purchase and maintain expensive commercial software and high performance computers. 
             And, no complex hiring and training is needed for retaining specialists and/or IT supports. We cover these.  </p>   
         </div>
         <div class="textColumn">
-        <p><b style="font-size:20px">Support</b><br><br> Analysis has several components: problem formulation, classic hand calculation, 
+        <p><strong style="font-size:20px;">Support</strong><br><br> Analysis has several components: problem formulation, classic hand calculation, 
            sophisticated computer modelling. We support you in one or more of them to free up your work force, add resources, balance 
            peak time workload, and introduce foreign expertise.  We also support you with programming using object oriented language 
            such as c++ or python and provide web-based calculation solution using Django. </p>   
@@ -74,36 +76,36 @@
 <!-- CLIENTS -->
 <hr class="solid">
 <div id="clients" class="anchor"></div>
-<div class="h1 center"><b>CLIENTS</b></div>
+<h2 class="h1 center"><strong>CLIENTS</strong></h2>
 
 <div class="row background">
-    <img class="clientImg background " src="img/clients/Cable Factory.png" alt="cable factory.png" align="left">
-    <img class="clientImg background" src="img/clients/CorvusEnergy.png" alt="CorvusEnergy.png" align="left">
-    <img class="clientImg background" src="img/clients/Cryologistics.png" alt="Cryologistics.png" align="left">
-    <img class="clientImg background" src="img/clients/cutric-crituc3-white.png" alt="cutric-crituc3-white.png" align="left">
-    <img class="clientImg background" src="img/clients/ekona_power.png" alt="ekona_power.png" align="left">
-    <img class="clientImg background" src="img/clients/Envenio.png" alt="Envenio.png" align="left">
-    <img class="clientImg background" src="img/clients/maesTronic.gif" alt="maesTronic.gif" align="left">
-    <img class="clientImg background" src="img/clients/MANNETRON.png" alt="MANNETRON.png" align="left">
-    <img class="clientImg background" src="img/clients/Papertech.png" alt="Papertech.png" align="left">
-    <img class="clientImg background" src="img/clients/safetyPower.jpg" alt="safetyPower.jpg" align="left">
-    <img class="clientImg background" src="img/clients/waterlooTI.png" alt="waterlooTI.png" align="left">
-    <img class="clientImg background" src="img/clients/vmc-logo.png" alt="vmc-logo.png" align="left">
-    <img class="clientImg background" src="img/clients/ReCarbn.png" alt="ReCarbn.png" align="left">
-    <img class="clientImg background" src="img/clients/cespira.webp" alt="cespira.webp" align="left">
-    <img class="clientImg background" src="img/clients/greenlane.png" alt="greenlane.png" align="left">    
-    <img class="clientImg background" src="img/clients/westport-fuel-systems.png" alt="westport-fuel-systems.png" align="left">    
+    <img class="clientImg background " src="img/clients/Cable Factory.png" alt="Cable Factory logo" align="left">
+    <img class="clientImg background" src="img/clients/CorvusEnergy.png" alt="CorvusEnergy logo" align="left">
+    <img class="clientImg background" src="img/clients/Cryologistics.png" alt="Cryologistics logo" align="left">
+    <img class="clientImg background" src="img/clients/cutric-crituc3-white.png" alt="Cutric Crituc3 logo" align="left">
+    <img class="clientImg background" src="img/clients/ekona_power.png" alt="Ekonapower logo" align="left">
+    <img class="clientImg background" src="img/clients/Envenio.png" alt="Envenio logo" align="left">
+    <img class="clientImg background" src="img/clients/maesTronic.gif" alt="MaesTronic logo" align="left">
+    <img class="clientImg background" src="img/clients/MANNETRON.png" alt="MANNETRON logo" align="left">
+    <img class="clientImg background" src="img/clients/Papertech.png" alt="Papertech logo" align="left">
+    <img class="clientImg background" src="img/clients/safetyPower.jpg" alt="SafetyPower logo" align="left">
+    <img class="clientImg background" src="img/clients/waterlooTI.png" alt="WaterlooTI logo" align="left">
+    <img class="clientImg background" src="img/clients/vmc-logo.png" alt="VMC logo" align="left">
+    <img class="clientImg background" src="img/clients/ReCarbn.png" alt="ReCarbn logo" align="left">
+    <img class="clientImg background" src="img/clients/cespira.webp" alt="Cespira logo" align="left">
+    <img class="clientImg background" src="img/clients/greenlane.png" alt="Greenlane logo" align="left">    
+    <img class="clientImg background" src="img/clients/westport-fuel-systems.png" alt="Westport Fuel Systems logo" align="left">    
 </div>
 
 <!-- ABOUT -->
 <hr class="solid">
 <div id="about" class="anchor"></div>
-<div class="h1 center"><b>ABOUT</b></div>
+<h2 class="h1 center"><strong>ABOUT</strong></h2>
 
     <div class="row">
       <div class="column hf0"></div>
       <div class="column hf1">
-        <img class="bioImage" src="img/bio/charles.jpg" alt="charles.jpg">
+        <img class="bioImage" src="img/bio/charles.jpg" alt="Charles Li portrait">
         <!-- <div class="grid-container"> -->
         <!--   <div class="item1"><img class="bioImage" src="img/bio/charles.jpg" alt="charles.jpg"></div> -->
         <!--   <div class="item2"><img class="bioImage" src="img/bio/westport.jpg" alt="westport.jpg"></div> -->
@@ -112,7 +114,7 @@
         <!-- </div> -->
       </div>
       <div class="column hf2">
-        <p> <b>marpoleSim</b> provides services of scientific and engineering calculations including mechanics, heat transfer, fluid mechanics 
+        <p> <strong>marpoleSim</strong> provides services of scientific and engineering calculations including mechanics, heat transfer, fluid mechanics 
             and chemical reaction.  <br><br>Charles Li is the principal engineering analyst with industry experience of over 18 years. His area of 
             expertise is computer modelling for engineering problems such as heat transfer, fluid dynamics and mechanical 
             structural integrity and failure.<br><br> From 1998 to 2017, he 
@@ -127,72 +129,73 @@
 <!-- CONTACT -->
 <hr class="solid">
 <div id="contact" class="anchor"></div>
-<div class="h1 center"><b>CONTACT</b></div>
+<h2 class="h1 center"><strong>CONTACT</strong></h2>
 
 <div class="row">
-    <p style="text-align: center;"> <b>Email:</b> charles.li@marpolesim.com </p>
-    <p style="text-align: center;"> <b>Phone:</b> 604.679.8908 </p>
-    <p style="text-align: center;"> <b>Address:</b> Vancouver, BC, Canada </p>
+    <p style="text-align: center;"><strong>Email:</strong> <a href="mailto:charles.li@marpolesim.com">charles.li@marpolesim.com</a></p>
+    <p style="text-align: center;"><strong>Phone:</strong> <a href="tel:+16046798908">604.679.8908</a></p>
+    <p style="text-align: center;"><strong>Address:</strong> Vancouver, BC, Canada</p>
     <!-- <p style="text-align: center;"><a href="https://www.linkedin.com/in/guowei-charles-li"><i style="font-size:24px" class="fa">&#xf08c;</i></a></p> -->
     <p style="text-align: center;"><a href="https://www.linkedin.com/company/marpolesim"><i style="font-size:24px" class="fa">&#xf08c;</i></a></p>
 </div>
 
 <!-- DEMONSTRATION -->
 <hr class="solid">
-<div class="h1 center"><b>CFD MODELLING CASES</b></div>
+<h2 class="h1 center"><strong>CFD MODELLING CASES</strong></h2>
 <div class="row">
     <div class="imageColumn">
-    <img class="caseImg" src="img/heatTFB.jpg" alt="heatTFB.webp" align="right">
+    <img class="caseImg" src="img/heatTFB.jpg" alt="Heat transfer modeling case image" align="right">
     </div>
     <div class="imageColumn">
-    <img class="caseImg center" src="img/trailer1B.png" alt="trailer1.png">
+    <img class="caseImg center" src="img/trailer1B.png" alt="Trailer case 1 modeling image">
     </div>
     <div class="imageColumn">
-    <img class="caseImg" src="img/boatB.jpg" alt="boat.jpg" align="left">
+    <img class="caseImg" src="img/boatB.jpg" alt="Boat case modeling image" align="left">
     </div>
 </div>
 
 <div class="row">
     <div class="imageColumn">
-    <img class="caseImg center" src="img/fanB2B.png" alt="fanB2B.png">
+    <img class="caseImg center" src="img/fanB2B.png" alt="Fan case 2 modelling image">
     </div>
     <div class="imageColumn">
-    <img class="caseImg" src="img/velo7B.png" alt="velo7.png" align="right">
+    <img class="caseImg" src="img/velo7B.png" alt="Velocity case 7 modelling image" align="right">
     </div>
     <div class="imageColumn">
-    <img class="caseImg center" src="img/fanB.png" alt="fanB.png.gif">
+    <img class="caseImg center" src="img/fanB.png" alt="Fan case modelling image">
     </div>
 </div>
 
 <div class="row">
     <div class="imageColumn">
-    <img class="caseImg" src="img/avelo.gif" alt="avelo.gif" align="right">
+    <img class="caseImg" src="img/avelo.gif" alt="Velocity case animation" align="right">
     </div>
     <div class="imageColumn">
-    <img class="caseImg center" src="img/trailer2B.png" alt="trailer2.png">
+    <img class="caseImg center" src="img/trailer2B.png" alt="Trailer case 2 modelling image">
     </div>
     <div class="imageColumn">
-    <img class="caseImg" src="img/velo.gif" alt="velo.gif" align="left">
+    <img class="caseImg" src="img/velo.gif" alt="Velocity case animation" align="left">
     </div>
 </div>
 
 <hr class="solid">
-<div class="h1 center"><b>FEA MODELLING CASES</b></div>
+<h2 class="h1 center"><strong>FEA MODELLING CASES</strong></h2>
 <div class="row">
     <div class="imageColumn">
-    <img class="caseImg" src="img/drillbit.png" alt="drillbit.png" align="right">
+    <img class="caseImg" src="img/drillbit.png" alt="Drill bit FEA modeling case image" align="right">
     </div>
     <div class="imageColumn">
-    <img class="caseImg center" src="img/propeller.png" alt="propeller.png">
+    <img class="caseImg center" src="img/propeller.png" alt="Propeller FEA modelling case image">
     </div>
     <div class="imageColumn">
-    <img class="caseImg" src="img/drone.png" alt="drone.png" align="left">
+    <img class="caseImg" src="img/drone.png" alt="Drone FEA modelling case image" align="left">
     </div>
 </div>
 
-<div class="footer">
-  <p> <b>marpoleSim</b> 2025, all rights reserved</p>
-</div>
+ </main>
+<footer class="footer">
+  <p> <strong>marpoleSim</strong> 2025, all rights reserved</p>
+</footer>
 
 </body>
 </html>
