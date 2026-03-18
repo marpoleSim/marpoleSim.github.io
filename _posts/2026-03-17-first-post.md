@@ -35,7 +35,6 @@ The energy equation is $E = mc^2$
 $$
 \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{u}) = 0
 $$
-
 ---
 
 ## 3. Preview your Markdown (very important)
