@@ -8,7 +8,7 @@ layout: default
 
 <ul>
   {% for post in site.posts %}
-    <li>
+    <li style="margin-bottom: 0.25em;">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a> &nbsp;&nbsp;&nbsp;
       <small>{{ post.date | date: "%Y-%m-%d" }}</small>
     </li>
