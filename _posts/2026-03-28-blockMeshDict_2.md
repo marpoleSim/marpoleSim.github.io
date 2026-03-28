@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Make bockMeshDict Writing Easier (2)"
+date: 2026-03-28
+---
 ## Introduction ##
 
 Creating a blockMeshDict file often requires manually assigning vertex indices, which can be error-prone and difficult to scale for complex geometries. 
