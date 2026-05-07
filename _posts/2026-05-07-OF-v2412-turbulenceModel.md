@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenFOAM v2413 Tutorial Cases Analysis(2)"
+title: "OpenFOAM v2413 Tutorial Cases Analysis (2)"
 date: 2026-05-07
 ---
 ## Turbulence Models ##
@@ -49,72 +49,80 @@ Even for RANS Model, there are many versions. Mostly, the models were developed 
 Among these model, the most used models k-epsilon two equation model, k-omega SST two equation model and Spalart-Allmaras single equation model. 
 
 ```
-+-----------------------+---------------------------------------------------------------------------------+
-| LienLeschziner        | Lien and Leschziner low-Reynolds number k-epsilon turbulence model for          |
-|                       | incompressible flows.                                                           |
-+-----------------------+---------------------------------------------------------------------------------+
-| LamBremhorstKE        | Lam and Bremhorst low-Reynolds number k-epsilon turbulence model for            |
-|                       | incompressible flows                                                            |
-+-----------------------+---------------------------------------------------------------------------------+
-| ShihQuadraticKE       | Shih's quadratic algebraic Reynolds stress k-epsilon turbulence model for       |
-|                       | incompressible flows                                                            |
-+-----------------------+---------------------------------------------------------------------------------+
-| LienCubicKE           | Lien cubic non-linear low-Reynolds k-epsilon turbulence models for              |
-|                       | incompressible flows.                                                           |
-+-----------------------+---------------------------------------------------------------------------------+
-| kkLOmega              | Low Reynolds-number k-kl-omega turbulence model for incompressible flows.       |
-+-----------------------+---------------------------------------------------------------------------------+
-| qZeta                 | Gibson and Dafa'Alla's q-zeta two-equation low-Re turbulence model for          |
-|                       | incompressible flows                                                            |
-+-----------------------+---------------------------------------------------------------------------------+
-| RNGkEpsilon           | Renormalization group k-epsilon turbulence model for incompressible and         |
-|                       | compressible flows.                                                             |
-+-----------------------+---------------------------------------------------------------------------------+
-| kEpsilon              | Standard k-epsilon turbulence model for incompressible and compressible flows   |
-|                       | including rapid distortion theory (RDT) based compression term.                 |
-+-----------------------+---------------------------------------------------------------------------------+
-| SSG                   | Speziale, Sarkar and Gatski Reynolds-stress turbulence model for incompressible |
-|                       | and compressible flows.                                                         |
-+-----------------------+---------------------------------------------------------------------------------+
-| kOmega                | Standard high Reynolds-number k-omega turbulence model for incompressible and   |
-|                       | compressible flows.                                                             |
-+-----------------------+---------------------------------------------------------------------------------+
-| EBRSM                 | Manceau (2015)'s elliptic-blending Reynolds-stress turbulence model for         |
-|                       | incompressible and compressible flows.                                          |
-+-----------------------+---------------------------------------------------------------------------------+
-| kOmegaSST             | Implementation of the k-omega-SST turbulence model for incompressible and       |
-|                       | compressible flows.                                                             |
-+-----------------------+---------------------------------------------------------------------------------+
-| LRR                   | Launder, Reece and Rodi Reynolds-stress turbulence model for incompressible and |
-|                       | compressible flows.                                                             |
-+-----------------------+---------------------------------------------------------------------------------+
-| kOmegaSSTLM           | Langtry-Menter 4-equation transitional SST model based on the k-omega-SST RAS   |
-|                       | model.                                                                          |
-+-----------------------+---------------------------------------------------------------------------------+
-| kEpsilonPhitF         | The k-epsilon-phit-f turbulence closure model for incompressible and            |
-|                       | compressible flows.                                                             |
-+-----------------------+---------------------------------------------------------------------------------+
-| realizableKE          | Realizable k-epsilon turbulence model for incompressible and compressible       |
-|                       | flows.                                                                          |
-+-----------------------+---------------------------------------------------------------------------------+
-| kOmegaSSTSAS          | Scale-adaptive URAS model based on the k-omega-SST RAS model.                   |
-+-----------------------+---------------------------------------------------------------------------------+
-| SpalartAllmaras       | Spalart-Allmaras one-transport-equation linear-eddy-viscosity turbulence        |
-|                       | closure model for incompressible and compressible external flows.               |
-+-----------------------+---------------------------------------------------------------------------------+
-| LaunderSharmaKE       | Launder and Sharma low-Reynolds k-epsilon turbulence model for incompressible   |
-|                       | and compressible and combusting flows including rapid distortion theory (RDT)   |
-|                       | based compression term.                                                         |
-+-----------------------+---------------------------------------------------------------------------------+
-| mixtureKEpsilon       | Mixture k-epsilon turbulence model for two-phase gas-liquid systems             |
-+-----------------------+---------------------------------------------------------------------------------+
-| LaheyKEpsilon         | Continuous-phase k-epsilon model including bubble-generated turbulence.         |
-+-----------------------+---------------------------------------------------------------------------------+
-| kOmegaSSTSato         | Implementation of the k-omega-SST turbulence model for dispersed bubbly flows   |
-|                       | with Sato (1981) bubble induced turbulent viscosity model.                      |
-+-----------------------+---------------------------------------------------------------------------------+
-| continuousGasKEpsilon | k-epsilon model for the gas-phase in a two-phase system supporting phase-       |
-|                       | inversion.                                                                      |
-+-----------------------+---------------------------------------------------------------------------------+
++-----------------------+-------------------------------------------------------------+
+| LienLeschziner        | Lien and Leschziner low-Reynolds number k-epsilon           |
+|                       | turbulence model for incompressible flows.                  |
++-----------------------+-------------------------------------------------------------+
+| LamBremhorstKE        | Lam and Bremhorst low-Reynolds number k-epsilon turbulence  |
+|                       | model for incompressible flows                              |
++-----------------------+-------------------------------------------------------------+
+| ShihQuadraticKE       | Shih's quadratic algebraic Reynolds stress k-epsilon        |
+|                       | turbulence model for incompressible flows                   |
++-----------------------+-------------------------------------------------------------+
+| LienCubicKE           | Lien cubic non-linear low-Reynolds k-epsilon turbulence     |
+|                       | models for incompressible flows.                            |
++-----------------------+-------------------------------------------------------------+
+| kkLOmega              | Low Reynolds-number k-kl-omega turbulence model for         |
+|                       | incompressible flows.                                       |
++-----------------------+-------------------------------------------------------------+
+| qZeta                 | Gibson and Dafa'Alla's q-zeta two-equation low-Re           |
+|                       | turbulence model for incompressible flows                   |
++-----------------------+-------------------------------------------------------------+
+| RNGkEpsilon           | Renormalization group k-epsilon turbulence model for        |
+|                       | incompressible and compressible flows.                      |
++-----------------------+-------------------------------------------------------------+
+| kEpsilon              | Standard k-epsilon turbulence model for incompressible and  |
+|                       | compressible flows including rapid distortion theory (RDT)  |
+|                       | based compression term.                                     |
++-----------------------+-------------------------------------------------------------+
+| SSG                   | Speziale, Sarkar and Gatski Reynolds-stress turbulence      |
+|                       | model for incompressible and compressible flows.            |
++-----------------------+-------------------------------------------------------------+
+| kOmega                | Standard high Reynolds-number k-omega turbulence model for  |
+|                       | incompressible and compressible flows.                      |
++-----------------------+-------------------------------------------------------------+
+| EBRSM                 | Manceau (2015)'s elliptic-blending Reynolds-stress          |
+|                       | turbulence model for incompressible and compressible flows. |
++-----------------------+-------------------------------------------------------------+
+| kOmegaSST             | Implementation of the k-omega-SST turbulence model for      |
+|                       | incompressible and compressible flows.                      |
++-----------------------+-------------------------------------------------------------+
+| LRR                   | Launder, Reece and Rodi Reynolds-stress turbulence model    |
+|                       | for incompressible and compressible flows.                  |
++-----------------------+-------------------------------------------------------------+
+| kOmegaSSTLM           | Langtry-Menter 4-equation transitional SST model based on   |
+|                       | the k-omega-SST RAS model.                                  |
++-----------------------+-------------------------------------------------------------+
+| kEpsilonPhitF         | The k-epsilon-phit-f turbulence closure model for           |
+|                       | incompressible and compressible flows.                      |
++-----------------------+-------------------------------------------------------------+
+| realizableKE          | Realizable k-epsilon turbulence model for incompressible    |
+|                       | and compressible flows.                                     |
++-----------------------+-------------------------------------------------------------+
+| kOmegaSSTSAS          | Scale-adaptive URAS model based on the k-omega-SST RAS      |
+|                       | model.                                                      |
++-----------------------+-------------------------------------------------------------+
+| SpalartAllmaras       | Spalart-Allmaras one-transport-equation linear-eddy-        |
+|                       | viscosity turbulence closure model for incompressible and   |
+|                       | compressible external flows.                                |
++-----------------------+-------------------------------------------------------------+
+| LaunderSharmaKE       | Launder and Sharma low-Reynolds k-epsilon turbulence model  |
+|                       | for incompressible and compressible and combusting flows    |
+|                       | including rapid distortion theory (RDT) based compression   |
+|                       | term.                                                       |
++-----------------------+-------------------------------------------------------------+
+| mixtureKEpsilon       | Mixture k-epsilon turbulence model for two-phase gas-liquid |
+|                       | systems                                                     |
++-----------------------+-------------------------------------------------------------+
+| LaheyKEpsilon         | Continuous-phase k-epsilon model including bubble-generated |
+|                       | turbulence.                                                 |
++-----------------------+-------------------------------------------------------------+
+| kOmegaSSTSato         | Implementation of the k-omega-SST turbulence model for      |
+|                       | dispersed bubbly flows with Sato (1981) bubble induced      |
+|                       | turbulent viscosity model.                                  |
++-----------------------+-------------------------------------------------------------+
+| continuousGasKEpsilon | k-epsilon model for the gas-phase in a two-phase system     |
+|                       | supporting phase-inversion.                                 |
++-----------------------+-------------------------------------------------------------+
 ```
 
