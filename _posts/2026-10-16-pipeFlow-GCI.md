@@ -42,13 +42,13 @@ This gives theoretical pressure drop: $5.82\times 10^{-4}$ Pa.
 
 ## CFD Model ##
 
-A 2D axi-symmetric model is built. The solver is incompressive laminar flow `simpleFoam`. The wall bouThe inlet boundary condition uses the following parabolic velocity profile with type `codedFixedValue`. This is convenient as the flow is fully developed and laminar. 
+A 2D axi-symmetric model is built. The solver is incompressive laminar flow `simpleFoam`. The wall boundary condition is `noSlip`. The inlet boundary condition uses the following parabolic velocity profile with type `codedFixedValue`. This is convenient as the flow is fully developed and laminar. 
 
 $$
-u(r)=2 \cdot U_{average}(1-\frac{r^2}{R^2})
+u(r)=2 \cdot U \cdot (1-\frac{r^2}{R^2})
 $$
 
-Mesh are uniform. Simulations were made with 3 cell sizes (fine 3.8mm, medium 4.9mm and coarse 6.4mm). The refinement ratio is kept 1.3. Note the cell size is representive cell size which is estimated from the total domain volume and cell count. 
+Mesh is uniform. Simulations were made with 3 cell sizes (fine 3.8mm, medium 4.9mm and coarse 6.4mm). The refinement ratio is kept 1.3. Note the cell size is representive cell size which is estimated from the total domain volume and cell count. 
 
 The pressure drop results are listed in the table below. 
 
@@ -72,7 +72,11 @@ $$
 
 $$
 \phi_1 = 5.81 \times 10^{-4} \\
+$$
+$$
 \phi_2 = 5.78 \times 10^{-4} \\
+$$
+$$
 \phi_3 = 5.73 \times 10^{-4} 
 $$
 
@@ -80,6 +84,8 @@ $$
 
 $$
 \epsilon_{21}=\phi_2-\phi_1= -2.8641 \times 10^{-6}\\
+$$
+$$
 \epsilon_{32}=\phi_3-\phi_2= -5.0626 \times 10^{-6}
 $$
 
@@ -90,6 +96,7 @@ p=\frac{ln|\epsilon_{32}/\epsilon_{21}|}{ln(r)}=2.1
 $$
 
 **Richardson Extrapolation**:
+
 $$
 \phi=\phi_1+\frac{\phi_1-\phi_2}{r^p-1}=5.85\times 10^{-4}
 $$
@@ -110,12 +117,15 @@ Without using theoretical value, the estimated error is,
 
 $$
 E_{21}=\frac{\phi_1-\phi_2}{\phi_1(r^p-1)}=0.64 \% \\
+$$
+$$
 E_{32}=\frac{\phi_2-\phi_3}{\phi_2(r^p-1)}=1.14 \%
 $$
 
 Note the error of $\phi_1$ is very close to that of Richardson extrapolation result. 
 
 **Grid Convergence Index (GCI)**:
+
 $$
 GCI_{21}=F_s \cdot E_{21} = 0.80 \% \\
 GCI_{32}=F_s \cdot E_{32} = 1.43 \%
