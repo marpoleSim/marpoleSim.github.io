@@ -4,8 +4,6 @@ title: "Pipe Flow Modelling Accuracy"
 date: 2026-10-16
 ---
 
-introduction
-
 ## Pipe Flow ##
 
 **Problem**: air (20 degC and 1 atm) flow through a pipe (length: 1m and diameter 0.1m) with an average flow velocity 0.01m/s. 
