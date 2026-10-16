@@ -6,11 +6,16 @@ date: 2026-10-16
 
 ## Pipe Flow ##
 
-**Problem**: air (20 degC and 1 atm) flow through a pipe (length: 1m and diameter 0.1m) with an average flow velocity 0.01m/s. 
+**Problem**: 
 
-**Question**: How accurate of the pressure drop the model predition is?
+Air (20 degC and 1 atm) flow through a pipe (length: 1m and diameter 0.1m) with an average flow velocity 0.01m/s. 
+
+**Question**: 
+
+How accurate of the pressure drop the model predition is?
 
 **Assumptions**: 
+
 - The flow is fully developed.
 - The pipe cross section is circular.
 
