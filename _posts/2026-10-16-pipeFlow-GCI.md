@@ -71,11 +71,11 @@ $$
 **Solutions**:
 
 $$
-\phi_1 = 5.81 \times 10^{-4} \\
+\phi_1 = 5.81 \times 10^{-4}
 $$
 
 $$
-\phi_2 = 5.78 \times 10^{-4} \\
+\phi_2 = 5.78 \times 10^{-4}
 $$
 
 $$
@@ -85,8 +85,9 @@ $$
 **Solution differences**:
 
 $$
-\epsilon_{21}=\phi_2-\phi_1= -2.8641 \times 10^{-6}\\
+\epsilon_{21}=\phi_2-\phi_1= -2.8641 \times 10^{-6}
 $$
+
 $$
 \epsilon_{32}=\phi_3-\phi_2= -5.0626 \times 10^{-6}
 $$
@@ -118,8 +119,9 @@ The convergence ratio is between 0 and 1. Thus, it is monotonic convergence.
 Without using theoretical value, the estimated error is,
 
 $$
-E_{21}=\frac{\phi_1-\phi_2}{\phi_1(r^p-1)}=0.64 \% \\
+E_{21}=\frac{\phi_1-\phi_2}{\phi_1(r^p-1)}=0.64 \%
 $$
+
 $$
 E_{32}=\frac{\phi_2-\phi_3}{\phi_2(r^p-1)}=1.14 \%
 $$
@@ -129,13 +131,17 @@ Note the error of $\phi_1$ is very close to that of Richardson extrapolation res
 **Grid Convergence Index (GCI)**:
 
 $$
-GCI_{21}=F_s \cdot E_{21} = 0.80 \% \\
+GCI_{21}=F_s \cdot E_{21} = 0.80 \% 
+$$
+
+$$
 GCI_{32}=F_s \cdot E_{32} = 1.43 \%
 $$
 
 $CGI_{21}$ is less than 1 and can be generally assumed to be accurate and mesh independent. 
 
 **Asymptotic Ratio (AR)**:
+
 $$
 AR =\frac{GCI_{32}}{r^p\cdot GCI_{21}}=1.00
 $$
