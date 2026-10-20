@@ -63,6 +63,12 @@ The pressure drop results are listed in the table below.
 | 0.0049 | 5.78E-4 | 
 | 0.0064 | 5.73E-4 |
 
+The plot below displays the result and the curve fit with 2nd order polynomial. Note in the plot, extra computation results of smaller cell size are given. 
+
+![Results and fitted curve](images/2026-10-16-pipeFlow-GCI-fig1.svg)
+
+As can be seen, when the cell size reaches 2.2mm, the results are independent to the mesh size except the last point with cell size 0.79mm. The last point may experience convergence issue when the cell size is very small. 
+
 ## Model Accuracy ##
 
 From the above CFD results, we can estimate the model accuracy. 
@@ -160,6 +166,8 @@ Now we come to estimate the CFD predicted pressure drop error.
 $$
 \triangle p=  \phi_1 \pm (\phi_1 \cdot GCI_{21}) = 5.81 \times 10^{-4} \pm 0.05 \times 10^{-4} Pa
 $$
+
+The range, when it is in the above plot, is quite large, though the accuracy is acceptablly below 1%.
 
 ## Notes ##
 
