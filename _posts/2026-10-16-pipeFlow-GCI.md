@@ -65,7 +65,7 @@ The pressure drop results are listed in the table below.
 
 The plot below displays the result and the curve fit with 2nd order polynomial. Note in the plot, extra computation results of smaller cell size are given. 
 
-![Results and fitted curve](post_images/2026-10-16-pipeFlow-GCI-fig1.svg)
+![Results and fitted curve](/post_images/2026-10-16-pipeFlow-GCI-fig1.svg)
 
 As can be seen, when the cell size reaches 2.2mm, the results are independent to the mesh size except the last point with cell size 0.79mm. The last point may experience convergence issue when the cell size is very small. 
 
