@@ -11,13 +11,23 @@ When calculating a single-phase thermodynamic state, a pressure-entropy (PS) fla
 
 Given pressure ($P_s$) and entropy ($s_s$), the PS flash solver will find temperature $T$ and density $\rho$ satisfying the following two equations:
 
-$$P(T, \rho) = P_s$$
-$$s(T, \rho) = s_s$$
+$$
+P(T, \rho) = P_s
+$$
+
+$$
+s(T, \rho) = s_s
+$$
 
 Define the residual functions $f_1$ and $f_2$,
 
-$$f_1(T, \rho)=P(T, \rho) - P_s$$
-$$f_2(T, \rho)=s(T, \rho) - s_s$$
+$$
+f_1(T, \rho)=P(T, \rho) - P_s
+$$
+
+$$
+f_2(T, \rho)=s(T, \rho) - s_s
+$$
 
 The problem is to find roots of the following equation system, 
 
@@ -187,6 +197,7 @@ $$
 
 
 Therefore,
+
 $$
 \left( \frac{\partial {s}}{\partial T} \right)_P =  \frac{c_v}{T}  
 +\frac{1}{\rho^2}\left( \frac{\partial {P}}{\partial T} \right)_\rho 
@@ -202,6 +213,7 @@ c_p = \left( \frac{\partial q}{\partial T} \right) _P=T \left( \frac{\partial s}
 $$
 
 Then,
+
 $$
 \frac{c_p}{T} =  \frac{c_v}{T}  
 +\frac{1}{\rho^2}\left( \frac{\partial {P}}{\partial T} \right)_\rho 
@@ -211,6 +223,7 @@ $$
 $$
 
 This gives,
+
 $$
 c_p - c_v =  
 \frac{T}{\rho^2}
@@ -285,7 +298,7 @@ det(J)
 
 $$ 
 
-Though this is a limit value, the calculation leading to the number involves division by  zero and infinite value. Thus this can cause numerical instability.
+Though $ \left( \frac{\partial P}{\partial T} \right) _\rho$ can approach a limit value, the calculation involves division by  zero and infinite value. This can cause numerical instability.
 
 ![Scientific line chart titled Density-Pressure Isotherms for methane. The horizontal axis is Density (kg/m^3), and the vertical axis is Pressure (Pa), scaled by 1e7. Three solid curves show methane isotherms at 185.6 K (blue), 190.6 K (orange), and 195.6 K (green). A dashed black line marks Saturated liquid, a dotted black line marks Saturated vapor, and a red dot marks the Critical point near density 163 kg/m^3 and pressure 0.46 × 10^7 Pa. The curves are plotted on a gray grid; the overall tone is neutral and scientific.](/post_images/2026-11-13-PS-flash-solver-fig1.png)
 
